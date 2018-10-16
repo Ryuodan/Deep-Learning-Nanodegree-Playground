@@ -18,12 +18,12 @@ def get_files(extension, path=''):
 checkpoint_files = [file.split("\\")[1] for file in get_files('ckpt', 'checkpoint/')]
 input_files = [file.split("\\")[1] for file in get_files('jpg', 'input\\') + get_files('png', 'input\\') ]
 
-print("/nChoose input file : ")
+print("\nChoose input file : ")
 for count, file in enumerate(input_files):
 	print(str(count+1) + '-' + file,end='\t')
 input_number = int(input("\nNumber : "))
 
-print("/nChoose art style to apply : ")
+print("\nChoose art style to apply : ")
 for count, file in enumerate(checkpoint_files):
 	print(str(count+1) + '-' + file,end='\t')
 checkpoint_number = int(input("\nNumber : "))
